@@ -1,0 +1,168 @@
+/*  Font Families */
+
+@font-face {
+  font-family: "Nexa", "Montserrat", sans-serif;
+  src: url('../fonts/nexa-light.otf') format(opentype);
+  src: url('../fonts/nexa-black.otf') format(opentype);
+  src: url('../fonts/nexa-bold.otf') format(opentype);
+}
+
+
+/* Universal Styles */
+
+html, body {
+  font-size: 16px;
+  font-family: "Nexa", sans-serif;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Nexa", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.image-container {
+  width: 60%;
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 990px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+
+/* Header Stylers */
+
+header {
+  height: 64px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+.logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 24px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.logo span {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 27px;
+}
+
+#colmar-logo {
+  font-family: "Nexa", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #1B202B;
+}
+
+#academy-logo {
+  font-family: "Nexa", sans-serif;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #687083;
+}
+
+nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 24px;
+}
+
+ul li a {
+  font-family: "Nexa", sans-serif;
+  font-weight: normal;
+  margin-left: 16px;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #1B202B;
+}
+
+nav.mobile-nav {
+  display: none;
+}
+
+nav li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+nav li:last-child {
+  padding-right: 0;
+}
+
+
+/* Banner Stylers */
+
+.banner {
+  max-width: 100%;
+  background-color: #9a9a9a
+}
+
+.container {
+  margin: 32px 24px;
+  max-width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.banner .image-container {
+  padding-right: 40px;
+}
+
+.banner-content {
+  width: 40%;
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
