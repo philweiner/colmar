@@ -18,7 +18,7 @@ html, body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: rgb(74, 146, 246);
 }
 
 strong {
@@ -27,17 +27,50 @@ strong {
 
 h1 {
   font-family: "Nexa", sans-serif;
-  font-size: 3.5rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 900;
   line-height: 1;
+  letter-spacing: .04rem;
+  color: rgb(74, 74, 74);
+  margin: 0;
 }
 
-.image-container {
+h2 {
+  font-family: "Nexa", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: .04rem;
+  color: rgb(74, 74, 74);
+  margin: 0
+}
+
+h3 {
+  font-family: "Nexa", sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: rgb(74, 74, 74);
+}
+
+.image-container-large {
   width: 60%;
   overflow: hidden;
+  margin: 32px 24px;
 }
 
-.image-container img {
+.image-container-large img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container-small {
+  width: 35%;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.image-container-small img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -47,6 +80,18 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 990px) {
@@ -60,10 +105,12 @@ h1 {
 
 header {
   height: 64px;
+  max-width: 1440px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   overflow: scroll;
+  margin: 0 auto;
 }
 
 .logo {
@@ -80,9 +127,7 @@ header {
 }
 
 .logo span {
-  font-weight: bold;
   text-transform: uppercase;
-  line-height: 27px;
 }
 
 #colmar-logo {
@@ -90,6 +135,7 @@ header {
   font-weight: bold;
   font-size: 1.2rem;
   color: #1B202B;
+  margin: 0;
 }
 
 #academy-logo {
@@ -97,6 +143,7 @@ header {
   font-weight: normal;
   font-size: 1.2rem;
   color: #687083;
+  margin: 0;
 }
 
 nav ul {
@@ -139,23 +186,24 @@ nav li:last-child {
 
 .banner {
   max-width: 100%;
-  background-color: #9a9a9a
+  background-color: rgb(216, 216, 216);
 }
 
 .container {
-  margin: 32px 24px;
   max-width: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.banner .image-container {
-  padding-right: 40px;
+.banner-details {
+  width: 600px;
 }
 
 .banner-content {
-  width: 40%;
+  width: 400px;
+  margin-left: 16px;
+  margin-right: 16px;
   display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -165,4 +213,124 @@ nav li:last-child {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.banner-content h3 {
+  margin-bottom: 3rem;
+}
+
+.banner-content .main-cta-btn {
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: rgb(74, 74, 74);
+  padding: 1rem 7rem;
+}
+
+
+/* Information Section */
+
+.information {
+  max-width: 100%;
+  background-color: rgb(243, 245, 245);
+}
+
+.feature-content {
+  width: 60%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#image-container-large {
+  overflow: hidden;
+  margin: 32px 24px;
+}
+
+#image-container-large img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-details {
+  font-size: 1.25rem;
+  margin: 0 1.5rem;
+  line-height: 1.4;
+}
+
+.info img.mobile {
+  display: none;
+}
+
+.feature-content h2 {
+  margin-bottom: 1rem;
+}
+
+.feature-content p {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+
+/* Side Info */
+
+.side-info-desktop {
+  width: 40%;
+  border-left: 1px solid rgb(216, 216, 216);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.side-info-mobile {
+  display: none;
+}
+
+.info-card {
+  margin-top: 16px;
+  margin-bottom: 75px;
+}
+
+.info {
+  border-bottom: 1px solid rgb(216, 216, 216);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.info img {
+  width: 35%;
+  padding: 1rem;
+}
+
+.info-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.info-content h3 {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-content span {
+  margin-bottom: 1rem;
+}
+
+.info-content a {
+  font-weight: 300;
 }
