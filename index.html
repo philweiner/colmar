@@ -7,40 +7,42 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
-    <!-- <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
   </head>
 
   <body>
 
     <!--Header-->
 
-    <header class="flex">
-      <div class="logo">
-        <img src="./resources/images/ic-logo.svg" alt="unable to load">
-        <span id="colmar-logo">Colmar</span><span id="academy-logo">Academy</span>
+    <header>
+      <div class="header-container flex">
+        <div class="logo">
+          <img src="./resources/images/ic-logo.svg" alt="unable to load">
+          <span id="colmar-logo">Colmar</span><span id="academy-logo">Academy</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">On Campus</a></li>
+            <li><a href="#">Online</a></li>
+            <li><a href="#">For Companies</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
+        <nav class='mobile-nav'>
+          <ul>
+            <li>
+              <a href="#"></a><img src="./resources/images/ic-logo.svg" alt="unable to load icon"></li>
+            <li>
+              <a href="#"></a><img src="./resources/images/ic-on-campus.svg" alt="unable to load icon"></li>
+            <li>
+              <a href="#"></a><img src="./resources/images/ic-online.svg" alt="unable to load icon"></li>
+            <li>
+              <a href="#"><img src="./resources/images/ic-login.svg" alt="unable to load icon"></a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">On Campus</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="#">For Companies</a></li>
-          <li><a href="#">Sign In</a></li>
-        </ul>
-      </nav>
-      <nav class='mobile-nav'>
-        <ul>
-          <li>
-            <a href="#"></a><img src="./resources/images/ic-logo.svg" alt="unable to load icon"></li>
-          <li>
-            <a href="#"></a><img src="./resources/images/ic-on-campus.svg" alt="unable to load icon"></li>
-          <li>
-            <a href="#"></a><img src="./resources/images/ic-online.svg" alt="unable to load icon"></li>
-          <li>
-            <a href="#"><img src="./resources/images/ic-login.svg" alt="unable to load icon"></a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <!-- Main Section Container -->
@@ -78,7 +80,7 @@
           </div>
         </div>
 
-        <!--Program Info Section-->
+        <!--Sidebar for Desktop-->
 
         <div class="side-info-desktop">
           <div class="info-card">
@@ -108,6 +110,8 @@
             </div>
           </div>
         </div>
+
+        <!--Sidebar for Mobile -->
 
         <div class="side-info-mobile">
           <div class="info-card">
@@ -140,6 +144,80 @@
 
       </div>
 
+      <!--Start Learning Section-->
+
+      <div class="courses">
+        <h2>Start Learning</h2>
+        <div class="course-container flex">
+
+          <div class="course-card" id="course-card-1">
+            <a id="course-card-1" href="#">
+              <img class="thumbnail" src="./resources/images/course-software.jpg" alt="unable to load image">
+              <div class="course-card-content">
+                <h3>Software engineering</h3>
+                <span class="category">Courses</span>
+                <span>Web Development, Mobile Development, IoT, APIs</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="course-card" id="course-card-2">
+            <a href="#">
+              <img class="thumbnail" src="./resources/images/course-computer-art.jpg" alt="unable to load image">
+              <div class="course-card-content">
+                <h3>Software engineering</h3>
+                <span class="category">Courses</span>
+                <span>Web Development, Mobile Development, IoT, APIs</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="course-card" id="course-card-3">
+            <a href="#">
+              <img class="thumbnail" src="./resources/images/course-design.jpg" alt="unable to load image">
+              <div class="course-card-content">
+                <h3>Software engineering</h3>
+                <span class="category">Courses</span>
+                <span>Web Development, Mobile Development, IoT, APIs</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="course-card" id="course-card-4">
+            <a href="#">
+              <img class="thumbnail" src="./resources/images/course-data.jpg" alt="unable to load image">
+              <div class="course-card-content">
+                <h3>Software engineering</h3>
+                <span class="category">Courses</span>
+                <span>Web Development, Mobile Development, IoT, APIs</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="course-card" id="course-card-5">
+            <a href="#">
+              <img class="thumbnail" src="./resources/images/course-business.jpg" alt="unable to load image">
+              <div class="course-card-content">
+                <h3>Software engineering</h3>
+                <span class="category">Courses</span>
+                <span>Web Development, Mobile Development, IoT, APIs</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="course-card" id="course-card-6">
+            <a href="#">
+              <img class="thumbnail" src="./resources/images/course-marketing.jpg" alt="unable to load image">
+              <div class="course-card-content">
+                <h3>Software engineering</h3>
+                <span class="category">Courses</span>
+                <span>Web Development, Mobile Development, IoT, APIs</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
 
 
 

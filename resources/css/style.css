@@ -14,6 +14,8 @@ html, body {
   font-size: 16px;
   font-family: "Nexa", sans-serif;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -27,7 +29,7 @@ strong {
 
 h1 {
   font-family: "Nexa", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 900;
   line-height: 1;
   letter-spacing: .04rem;
@@ -37,7 +39,7 @@ h1 {
 
 h2 {
   font-family: "Nexa", sans-serif;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: .04rem;
@@ -105,12 +107,20 @@ h3 {
 
 header {
   height: 64px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  overflow: scroll;
+  z-index: 5;
+  top: 0;
+}
+
+.header-container {
+  margin: 0 auto;
   max-width: 1440px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: scroll;
-  margin: 0 auto;
 }
 
 .logo {
@@ -187,6 +197,8 @@ nav li:last-child {
 .banner {
   max-width: 100%;
   background-color: rgb(216, 216, 216);
+  position: relative;
+  top: 64px;
 }
 
 .container {
@@ -230,8 +242,10 @@ nav li:last-child {
 /* Information Section */
 
 .information {
+  position: relative;
   max-width: 100%;
   background-color: rgb(243, 245, 245);
+  top: 64px;
 }
 
 .feature-content {
@@ -333,4 +347,71 @@ nav li:last-child {
 
 .info-content a {
   font-weight: 300;
+}
+
+
+/* Course Section */
+
+.courses {
+  position: relative;
+  top: 64px;
+  background-color: rgb(216, 216, 216);
+  width: 100%;
+}
+
+.courses h2 {
+  margin: 64px auto;
+  text-align: center;
+}
+
+.course-container {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.course-card {
+  width: 370px;
+  margin-right: 32px;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.course-card .thumbnail {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.course-container:last-child {
+  margin-right: 0rem;
+}
+
+.course-card-content {
+  padding: 0 0 3rem 1.5rem;
+}
+
+.course-card-content span {
+  color: rgb(125, 125, 125);
+  font-size: 1.25rem;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-card-content .category {
+  text-transform: uppercase;
+  display: block;
+}
+
+#course-card-3, #course-card-6 {
+  margin-right: 0;
 }
