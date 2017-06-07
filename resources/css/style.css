@@ -55,7 +55,7 @@ h3 {
 }
 
 .image-container-large {
-  width: 60%;
+  width: 59%;
   overflow: hidden;
   margin: 32px 24px;
 }
@@ -201,7 +201,7 @@ nav li:last-child {
   top: 64px;
 }
 
-.container {
+.banner-container {
   max-width: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -213,7 +213,7 @@ nav li:last-child {
 }
 
 .banner-content {
-  width: 400px;
+  max-width: 400px;
   margin-left: 16px;
   margin-right: 16px;
   display: inline-block;
@@ -248,7 +248,7 @@ nav li:last-child {
   top: 64px;
 }
 
-.feature-content {
+.feature-container {
   width: 60%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -280,11 +280,11 @@ nav li:last-child {
   display: none;
 }
 
-.feature-content h2 {
+.feature-details h2 {
   margin-bottom: 1rem;
 }
 
-.feature-content p {
+.feature-details p {
   margin-bottom: 2rem;
   line-height: 1.5;
 }
@@ -343,6 +343,8 @@ nav li:last-child {
 
 .info-content span {
   margin-bottom: 1rem;
+  font-size: 1.125rem;
+  color: rgb(125, 125, 125);
 }
 
 .info-content a {
@@ -414,4 +416,98 @@ nav li:last-child {
 
 #course-card-3, #course-card-6 {
   margin-right: 0;
+}
+
+
+/* Thesis Section */
+
+.thesis {
+  position: relative;
+  max-width: 100%;
+  background-color: rgb(243, 245, 245);
+  top: 64px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.thesis h2 {
+  margin: 64px auto 32px auto;
+  text-align: center;
+}
+
+.thesis-content {
+  width: 60%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  color: rgb(125, 125, 125);
+}
+
+.video-container-large {
+  overflow: hidden;
+  margin: 32px 16px 24px 24px;
+}
+
+.video-container-large video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thesis-details {
+  font-size: 1.25rem;
+  margin: 0 1.5rem;
+  line-height: 1.4;
+}
+
+#side-info-desktop {
+  border-left: none;
+}
+
+#info {
+  border-bottom: none;
+}
+
+#info span {
+  font-size: 1.125rem;
+  color: rgb(125, 125, 125);
+}
+
+
+/* Footer Section */
+
+footer {
+  position: relative;
+  top: 64px;
+  max-width: 100%;
+  height: 110px;
+  border-top: 1px solid rgb(216, 216, 216);
+  color: rgb(125, 125, 125);
+  background-color: rgb(243, 245, 245);
+}
+
+.copyright {
+  text-align: left;
+  margin: 24px;
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.ts-and-cs {
+  text-align: right;
+  display: inline-block;
+  margin: 24px;
+}
+
+.ts-and-cs a {
+  padding-right: 1rem;
 }
