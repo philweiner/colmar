@@ -509,5 +509,6 @@ footer {
 }
 
 .ts-and-cs a {
+  color: rgb(125, 125, 125);
   padding-right: 1rem;
 }
