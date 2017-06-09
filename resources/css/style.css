@@ -375,7 +375,7 @@ nav li:last-child {
     margin-bottom: 1rem;
   }
   .banner-content {
-    text-align: center;
+    text-align: left;
     width: 90%;
     margin: 32px 16px;
   }
