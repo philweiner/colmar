@@ -211,6 +211,12 @@ ul li a {
   font-size: 1.125rem;
   text-decoration: none;
   color: #1B202B;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+ul li a:hover {
+  font-weight: 800;
 }
 
 nav.mobile-nav {
@@ -323,13 +329,18 @@ nav li:last-child {
   padding-bottom: 1rem;
   padding-left: 25%;
   padding-right: 25%;
-  -webkit-transition: all 150ms linear;
-  transition: all 150ms linear;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 .main-cta-btn:hover {
   color: rgb(74, 74, 74);
   background-color: #fff;
+}
+
+.main-cta-btn:active {
+  color: #fff;
+  background-color: #000;
 }
 
 .banner .button-container a.main-cta-btn {
@@ -582,6 +593,12 @@ nav li:last-child {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transition: opacity 150ms linear;
+  transition: opacity 150ms linear;
+}
+
+.course-card:hover {
+  opacity: .8;
 }
 
 .course-card .thumbnail {
@@ -785,6 +802,12 @@ footer {
 .ts-and-cs a {
   color: rgb(125, 125, 125);
   padding-right: 1rem;
+  -webkit-transition: color 150ms linear;
+  transition: color 150ms linear;
+}
+
+.ts-and-cs a:hover {
+  color: rgb(74, 146, 246);
 }
 
 @media only screen and (max-width: 1024px) {}
