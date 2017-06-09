@@ -115,8 +115,11 @@ h3 {
   html {
     font-size: 14px;
   }
+  body {
+    background-color: rgb(243, 245, 245);
+  }
   h2 {
-    font-size: 1.2rem;
+    font-size: 2.25rem;
     line-height: 1;
   }
 }
@@ -432,18 +435,21 @@ nav li:last-child {
   line-height: 1.5;
 }
 
-@media only screen and (max-width 1024px) {
+@media only screen and (max-width: 1024px) {
   .feature-details h2 {
     font-size: 1.75rem;
   }
 }
 
-@media only screen and (max-width 768px) {}
-
-
+@media only screen and (max-width: 768px) {
+  .feature-container {
+    display: none;
+  }
 }
 
+
 /* Information Side Info Cards */
+
 .side-info-desktop {
   width: 40%;
   border-left: 1px solid rgb(216, 216, 216);
@@ -455,13 +461,16 @@ nav li:last-child {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .side-info-mobile {
   display: none;
 }
+
 .info-card-container {
   margin-top: 16px;
   margin-bottom: 75px;
 }
+
 .info {
   border-bottom: 1px solid rgb(216, 216, 216);
   display: -webkit-inline-box;
@@ -474,46 +483,86 @@ nav li:last-child {
   -webkit-transition: color 200ms linear;
   transition: color 200ms linear;
 }
+
 .info:hover {
   background-color: rgb(216, 216, 216);
 }
+
 .info img {
   width: 35%;
   padding: 1rem;
 }
+
 .info-content {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .info-content h3 {
   margin-top: 0rem;
   margin-bottom: 0.5rem;
 }
+
 .info-content span {
   margin-bottom: 1rem;
   font-size: 1.125rem;
   color: rgb(125, 125, 125);
 }
+
 .info-content a {
   font-weight: 300;
 }
-@media only screen and (max-width 1024px) {}
-@media only screen and (max-width 768px) {}
-@media only screen and (max-width 470px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+  .side-info-desktop {
+    width: 100%;
+  }
+  .info {
+    display: block;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .info img {
+    display: none;
+  }
+  .info img.mobile {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  .info-content {
+    width: 90%;
+    margin: 0 auto 16px auto;
+  }
+  .info-content span {
+    font-size: 1.5rem;
+  }
+  .info:hover {
+    background-color: rgb(243, 245, 245);
+  }
+}
+
+@media only screen and (max-width: 470px) {}
+
 
 /* Course Section */
+
 .courses {
   position: relative;
   top: 64px;
   background-color: rgb(216, 216, 216);
   width: 100%;
 }
+
 .courses h2 {
   margin: 64px auto;
   text-align: center;
 }
+
 .course-container {
   width: 100%;
   -ms-flex-wrap: wrap;
@@ -523,6 +572,7 @@ nav li:last-child {
   justify-content: center;
   margin-bottom: 32px;
 }
+
 .course-card {
   width: 370px;
   margin-right: 32px;
@@ -533,17 +583,21 @@ nav li:last-child {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .course-card .thumbnail {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
 }
+
 .course-container:last-child {
   margin-right: 0rem;
 }
+
 .course-card-content {
   padding: 0 0 3rem 1.5rem;
 }
+
 .course-card-content span {
   color: rgb(125, 125, 125);
   font-size: 1.25rem;
@@ -551,18 +605,69 @@ nav li:last-child {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
 .course-card-content .category {
   text-transform: uppercase;
   display: block;
 }
+
 #course-card-3, #course-card-6 {
   margin-right: 0;
 }
-@media only screen and (max-width 1024px) {}
-@media only screen and (max-width 768px) {}
-@media only screen and (max-width 470px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 1172px) {
+  #course-card-3, #course-card-6 {
+    margin-right: 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .courses {
+    top: -11px;
+    background-color: rgb(243, 245, 245);
+    border-bottom: 1px solid rgb(216, 216, 216);
+  }
+  .course-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .course-card {
+    width: 90%;
+    background-color: rgb(216, 216, 216);
+    margin: 8px 16px;
+  }
+  #course-card-3, #course-card-6 {
+    margin-right: 16px;
+  }
+  .courses h2 {
+    margin: 48px auto 32px auto;
+    text-align: center;
+  }
+  .course-card .thumbnail {
+    display: none;
+  }
+  .course-card span, .course-card span.category {
+    display: none;
+  }
+  .course-card-content {
+    padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  /*#course-card-3 {
+    margin-left: 28px;
+    margin-right: 28px;*/
+}
+
 
 /* Thesis Section */
+
 .thesis {
   position: relative;
   max-width: 100%;
@@ -573,10 +678,12 @@ nav li:last-child {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .thesis h2 {
   margin: 64px auto 64px auto;
   text-align: center;
 }
+
 .thesis-content {
   width: 60%;
   display: -webkit-inline-box;
@@ -589,35 +696,67 @@ nav li:last-child {
   margin-bottom: 2rem;
   color: rgb(125, 125, 125);
 }
+
 .video-container-large {
   overflow: hidden;
   margin: 16px 16px 24px 24px;
 }
+
 .video-container-large video {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .thesis-details {
   font-size: 1.25rem;
   margin: 0 1.5rem;
   line-height: 1.4;
 }
+
 #side-info-desktop {
   border-left: none;
 }
+
 #info {
   border-bottom: none;
 }
+
 #info span {
   font-size: 1.125rem;
-  color: rgb(125, 125, 125);
+  color: rgb(243, 245, 245);
 }
-@media only screen and (max-width 1024px) {}
-@media only screen and (max-width 768px) {}
-@media only screen and (max-width 470px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+  .thesis {
+    top: -11px;
+    background-color: rgb(243, 245, 245);
+  }
+  .thesis h2 {
+    margin: 48px auto 48px auto;
+  }
+  .thesis-details {
+    display: none;
+  }
+  #side-info-desktop {
+    display: none;
+  }
+  .thesis-content {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .video-container-large {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {}
+
 
 /* Footer Section */
+
 footer {
   position: relative;
   top: 64px;
@@ -627,6 +766,7 @@ footer {
   color: rgb(125, 125, 125);
   background-color: rgb(243, 245, 245);
 }
+
 .copyright {
   text-align: left;
   margin: 24px;
@@ -635,15 +775,41 @@ footer {
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
+
 .ts-and-cs {
   text-align: right;
   display: inline-block;
   margin: 24px;
 }
+
 .ts-and-cs a {
   color: rgb(125, 125, 125);
   padding-right: 1rem;
 }
-@media only screen and (max-width 1024px) {}
-@media only screen and (max-width 768px) {}
-@media only screenand (max-width 470px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    height: 90px;
+    top: 0;
+    max-width: 100%;
+    border-top: none;
+    color: rgb(125, 125, 125);
+    background-color: rgb(243, 245, 245);
+  }
+  .ts-and-cs {
+    display: none;
+  }
+}
+
+@media only screenand (max-width: 470px) {}
+
+
+}
+
+}
+
+}
+
+}
