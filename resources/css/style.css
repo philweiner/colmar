@@ -10,6 +10,11 @@
 
 /* Universal Styles */
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, body {
   font-size: 16px;
   font-family: "Nexa", sans-serif;
@@ -305,18 +310,21 @@ nav li:last-child {
 }
 
 .banner-content h3 {
-  padding-bottom: 2rem;
+  /*padding-bottom: 2rem;*/
   width: 70%;
 }
 
 .main-cta-btn {
+  text-align: center;
+  display: block;
+  width: 70%;
   font-size: 1.25rem;
   color: #fff;
   background-color: rgb(74, 74, 74);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 25%;
-  padding-right: 25%;
+  /*padding-left: 25%;
+  padding-right: 25%;*/
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
 }
@@ -342,6 +350,9 @@ nav li:last-child {
   .banner-content h3 {
     width: 90%;
   }
+  .banner-details {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -362,24 +373,27 @@ nav li:last-child {
   .banner-details {
     margin-bottom: 1rem;
     margin: 32px 16px;
+    max-width: 100%
   }
   .banner-content {
     text-align: left;
     /* width: 90%; */
-    margin: 0 auto 16px auto;
+    margin: 0 auto;
   }
   .banner-content h1 {
     margin-bottom: 2rem;
     width: 100%;
+    line-height: 1.2;
   }
   .banner-content h3 {
-    padding-bottom: 2rem;
+    /*padding-bottom: 2rem;*/
     width: 100%;
     margin-top: 0;
   }
   .banner a.main-cta-btn {
-    padding-left: 35%;
-    padding-right: 35%;
+    /*padding-left: 35%;
+    padding-right: 35%;*/
+    width: 100%;
   }
 }
 
@@ -420,6 +434,7 @@ nav li:last-child {
   font-size: 1.25rem;
   margin: 0 1.5rem;
   line-height: 1.4;
+  color: rgb(125, 125, 125);
 }
 
 .info img.mobile {
@@ -521,23 +536,27 @@ nav li:last-child {
   .side-info-desktop {
     width: 100%;
   }
+  .info-card-container {
+    margin-top: 0;
+  }
   .info {
     display: block;
     -webkit-transition: none;
     transition: none;
+    padding: 32px 16px;
   }
   .info img {
     display: none;
   }
   .info img.mobile {
-    width: 90%;
+    width: 100%;
     display: block;
-    margin: 16px;
+    margin-bottom: 2rem;
     padding: 0;
   }
   .info-content {
-    width: 90%;
-    margin: 16px;
+    /*width: 90%;
+    margin: 16px;*/
   }
   .info-content span {
     font-size: 1.5rem;
@@ -642,9 +661,10 @@ nav li:last-child {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding: 16px;
   }
   .course-card {
-    width: 90%;
+    width: 100%;
     background-color: rgb(216, 216, 216);
     margin: 8px 16px;
   }
@@ -731,7 +751,7 @@ nav li:last-child {
 
 #info span {
   font-size: 1.125rem;
-  color: rgb(243, 245, 245);
+  color: rgb(125, 125, 125);
 }
 
 @media only screen and (max-width: 1024px) {}
